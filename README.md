@@ -24,5 +24,4 @@
 * `$ git checkout`すると`warning: unable to unlink`って言われる
   * checkoutしても変更分が残ってしまう
   * シリアルポート使うために`$ sudo ./arduino`でArduino Ideを起こしてるので作成したファイルの所有者がrootになるから
-  * 自分でファイル作る or chownすれば問題ない？
-  * sudoしなくてもいけるわ
+  * `$ sudo usermod -a -G dialout $USER` でグループに追加すればよし
